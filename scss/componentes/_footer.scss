@@ -1,0 +1,26 @@
+@import '../base/mapas';
+
+/*propiedad para logos de redes dentro de footer*/
+footer {
+  img {
+    height: map-get($general, footer-img-alto);
+    width: map-get($general, footer-img-ancho);
+  }
+}
+
+/*stilos de buttons- footer*/
+.button-foot {
+  border: 1px solid white
+}
+
+.button-foot:hover {
+  background: #b00;
+  border: 1px solid gold;
+}
+
+.button-foot:active {
+  background: #3B5998;
+
+}
+
+/*fin estilo button footer*/

@@ -1,0 +1,19 @@
+    @mixin prefijos ($scale){
+    transform: $scale;
+    -webkit-transform: $scale;
+    -o-transform: $scale;
+    -moz-transform: $scale;
+}
+
+@mixin titulo ($rotatey) {
+    transform: $rotatey;
+    -webkit-transform:$rotatey;
+    -o-transform:$rotatey;
+    -moz-transform:$rotatey;    
+}
+@mixin titulo ($rotatex) {
+    transform: $rotatex;
+    -webkit-transform:$rotatex;
+    -o-transform:$rotatex;
+    -moz-transform:$rotatex;    
+}

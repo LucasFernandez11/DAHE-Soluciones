@@ -1,0 +1,238 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.body {
+  background: linear-gradient(180deg, #4ca1af 11%, rgba(2, 0, 36, 0.8995973389) 79%);
+}
+
+/*propiedad para img dentro de  navbar*/
+header img {
+  width: 13vh;
+  height: 5vh;
+}
+
+/*fin de img de navbar*/
+/*estilo presentacion de paginas*/
+.presentacionParrafoColor {
+  color: antiquewhite;
+  text-align: center;
+  font-family: "roboto";
+  font-size: 20px;
+}
+
+/*modelado de mi titulo*/
+.titulo-principal {
+  padding: 15px;
+  margin: 15px;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Monoton", cursive;
+  font-weight: lighter;
+  text-decoration: double underline overline;
+  color: #FF074A;
+  display: flex;
+  justify-content: center;
+  animation-duration: 4s;
+  animation-name: aparecer;
+}
+
+.titulo {
+  font-size: 70px;
+  font-weight: lighter;
+  display: block;
+  margin: 15px;
+  padding: auto;
+}
+
+/*animation en mi titulo*/
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    color: deeppink;
+  }
+  10% {
+    color: brown;
+  }
+  15% {
+    color: #0e1979;
+  }
+  25% {
+    transform: rotatey(90deg);
+    -webkit-transform: rotatey(90deg);
+    -o-transform: rotatey(90deg);
+    -moz-transform: rotatey(90deg);
+    color: crimson;
+  }
+  35% {
+    color: darkblue;
+  }
+  45% {
+    color: darkorange;
+  }
+  55% {
+    color: darkkhaki;
+  }
+  65% {
+    transform: rotatex(90deg);
+    transform: rotatex(90deg);
+    -webkit-transform: rotatex(90deg);
+    -o-transform: rotatex(90deg);
+    -moz-transform: rotatex(90deg);
+    color: darkgreen;
+  }
+  75% {
+    color: darkgray;
+  }
+  85% {
+    color: darkmagenta;
+  }
+  95% {
+    color: darkred;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Grid */
+.colorText {
+  color: antiquewhite;
+}
+
+/*fin de cards y grid*/
+/* transform y transition*/
+.text1,
+.text2,
+.text3 {
+  word-spacing: 2px;
+  border-radius: 15px;
+  transition: all 1s;
+}
+
+.text1:hover {
+  box-shadow: 0 1px 10px;
+  background-color: var(--background-texto);
+}
+
+.text2:hover {
+  box-shadow: 0 1px 10px;
+  background-color: var(--background-texto);
+}
+
+.text3:hover {
+  box-shadow: 0 1px 10px;
+  background-color: var(--background-texto);
+}
+
+.text3Bis {
+  transition: all 2s;
+}
+
+.text3Bis:hover {
+  box-shadow: 0 1px 10px;
+  background-color: var(--background-texto);
+  /*prefijos con mixin*/
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+/*fin transform y transition*/
+/*propiedad para logos de redes dentro de footer*/
+footer img {
+  height: 5vh;
+  width: 5vh;
+}
+
+/*stilos de buttons- footer*/
+.button-foot {
+  border: 1px solid white;
+}
+
+.button-foot:hover {
+  background: #b00;
+  border: 1px solid gold;
+}
+
+.button-foot:active {
+  background: #3B5998;
+}
+
+/*fin estilo button footer*/
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* carousel de infraestructura*/
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/*background de texto dentro de mi carousel*/
+.fuente-carousel {
+  background-color: rgba(44, 45, 49, 0.596);
+  border-radius: 18px;
+}
+
+.card-img-size {
+  height: 20%;
+  width: 100%;
+}
+
+/*boton ofcanvas en pag infraestructura*/
+.list-style {
+  list-style: none;
+  font-family: "roboto", cursive;
+  font-size: 18px;
+}
+
+/*button whatsapp solo en pagina de contacto*/
+/* button whatsapp solo en pagina de contacto*/
+.btn-whatsapp {
+  display: none;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-whatsapp {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    color: #fff;
+    position: fixed;
+    right: 15%;
+    bottom: 8%;
+    border-radius: 50%;
+    line-height: 80px;
+    z-index: 999;
+    size: 20px;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

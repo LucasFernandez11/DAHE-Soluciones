@@ -1,0 +1,89 @@
+ @import '../base/variables';
+ @import '../base/mapas';
+ @import '../base/mixin';
+ /*modelado de mi titulo*/
+ .titulo-principal {
+    padding: 15px;
+    margin: 15px;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Monoton", cursive;
+    font-weight: lighter;
+    text-decoration: double underline overline;    
+    color: #FF074A;
+    display: flex;
+    justify-content: center;
+    animation-duration: 4s;
+    animation-name: aparecer;
+  }
+  
+  .titulo {
+    font-size: 70px;
+    font-weight: lighter;
+    display: block;
+    margin: 15px;  
+    padding: auto;
+   
+  }
+  
+  /*animation en mi titulo*/
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+  
+    5% {
+      color: deeppink;
+    }
+  
+    10% {
+      color: brown;
+    }
+  
+    15% {
+      color: rgb(14, 25, 121);
+    }
+  
+    25% {
+     
+      @include titulo (rotatey(90deg));
+      color: crimson;
+    }
+  
+    35% {
+  
+      color: darkblue;
+    }
+  
+    45% {
+  
+      color: darkorange;
+    }
+  
+    55% {
+      color: darkkhaki;
+    }
+  
+    65% {
+      transform: rotatex(90deg);
+      @include titulo (rotatex(90deg));
+      color: darkgreen;
+    }
+  
+    75% {
+      color: darkgray;
+    }
+  
+    85% {
+      color: darkmagenta;
+    }
+  
+    95% {
+      color: darkred;
+    }
+  
+    100% {
+      opacity: 1;
+      
+    }
+  }
