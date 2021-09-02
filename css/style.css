@@ -234,5 +234,25 @@ footer img {
     align-items: center;
   }
 }
+.titulo-principal-p {
+  padding: 15px;
+  margin: 15px;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Monoton", cursive;
+  font-weight: lighter;
+  text-decoration: double underline overline;
+  color: #FF074A;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-p {
+  font-size: 70px;
+  font-weight: lighter;
+  display: block;
+  margin: 15px;
+  padding: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
