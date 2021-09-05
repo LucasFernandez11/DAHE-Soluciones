@@ -7,6 +7,16 @@
   background: linear-gradient(180deg, #4ca1af 11%, rgba(2, 0, 36, 0.8995973389) 79%);
 }
 
+/*propiedades para separacion de seccion */
+.separador-background {
+  background: url(http://www.retesar.com/images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
 /*propiedad para img dentro de  navbar*/
 header img {
   width: 13vh;
