@@ -203,8 +203,7 @@ footer img {
   font-size: 18px;
 }
 
-/*button whatsapp solo en pagina de contacto*/
-/* button whatsapp solo en pagina de contacto*/
+/*button whatsapp solo en pagina de contacto para pantallas mobile*/
 .btn-whatsapp {
   display: none;
   width: 70px;
