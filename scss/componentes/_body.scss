@@ -1,3 +1,4 @@
+@import '../base/extend';
 * {
   padding: 0px;
   margin: 0px;
@@ -10,11 +11,17 @@
 
 /*propiedades para separacion de seccion */
 .separador-background {
-  background: url(https://img.freepik.com/foto-gratis/hombre-joven-tecnico-que-trabaja-tableta-dentro-sala-centro-datos-grande-llena-servidores-rack-centrarse-cabeza-hombre_166273-1229.jpg?size=626&ext=jpg&ga=GA1.2.1361938581.1620950400);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  padding-bottom: 200px;
+  background: url("https://st3.depositphotos.com/2572561/15834/v/600/depositphotos_158340778-stock-video-male-it-technician-working-on.jpg");
+ @extend %separador;
+
+}
+
+
+.separador-background-clientes1 { 
+  background: url("https://gerencia-ambiental.com/wp-content/uploads/2020/06/Movistar-Telefonica-1440x564_c.jpg");
+  @extend %separador;
+}
+.separador-background-clientes2 { 
+  background: url("http://telecentro.com.ar/img/meta-image.jpg");
+  @extend %separador;
 }
