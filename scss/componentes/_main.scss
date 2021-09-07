@@ -52,4 +52,52 @@
       align-items:center;
     }
   }
-  
+  /*fin de button whatsapp*/
+  .formulario {
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .titulo-formulario {
+    font-family: map-get($general, fuente-principal);
+    text-align: map-get($general , alineacion-texto);
+    color: map-get($general, color-principal );
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .casillas-formulario {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-family: map-get($general, fuente-principal);
+    color: black;
+    font-size: map-get($general , tamaño-fuente );
+    border: none;
+  }
+  textarea {
+    min-height: 100px;
+    max-height: 250px;
+    max-width: 100%;
+  }
+  .boton-form-contacto {
+    background: #31384a;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-family: map-get($general, fuente-principal);
+    font-size: map-get($general , tamaño-fuente );
+    color: map-get($general, color-principal );    
+  }
+  .boton-form-contacto:hover {
+    cursor:pointer;
+  }
+  @media only screen and (max-width: 576px) {
+    .formulario {
+      width: 100% ;
+    }
+    
+  }
