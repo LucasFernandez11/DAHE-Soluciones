@@ -1,4 +1,5 @@
 @import '../base/extend';
+
 * {
   padding: 0px;
   margin: 0px;
@@ -9,23 +10,26 @@
 
 }
 
-/*propiedades para separacion de seccion */
+/*propiedades para separacion de secciones */
 .separador-background {
   background: url("https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
- @extend %separador;
+  @extend %separador;
 
 }
 
 
-.separador-background-clientes1 { 
+.separador-background-clientes1 {
   background: url("https://gerencia-ambiental.com/wp-content/uploads/2020/06/Movistar-Telefonica-1440x564_c.jpg");
   @extend %separador;
 }
-.separador-background-clientes2 { 
+
+.separador-background-clientes2 {
   background: url("http://telecentro.com.ar/img/meta-image.jpg");
   @extend %separador;
 }
-.separador-background-clientes3 { 
+
+.separador-background-clientes3 {
   background: url("http://www.publibureau.com/comfica/wp-content/uploads/2018/04/Fondo_Transparente_Web-01.png");
   @extend %separador;
 }
+/*fin de separaciones*/

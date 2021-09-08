@@ -5,18 +5,18 @@
 /*propiedad para img dentro de  navbar*/
 header {
     img {
-        width: map-get($general, header-img-ancho );
-        height: map-get($general, header-img-alto );
+        width: map-get($general, header-img-ancho);
+        height: map-get($general, header-img-alto);
     }
 }
 
 /*fin de img de navbar*/
 
 /*estilo presentacion de paginas*/
-.presentacionParrafoColor {   
-    color: map-get($general , color-principal );
-    text-align: map-get($general , alineacion-texto );
-    font-family: map-get($general, fuente-principal );
-    font-size: map-get($general, tamaño-fuente );
+.presentacionParrafoColor {
+    color: map-get($general, color-principal);
+    text-align: map-get($general, alineacion-texto);
+    font-family: map-get($general, fuente-principal);
+    font-size: map-get($general, tamaño-fuente);
 }
-    
+/*fin estilo presentacion de paginas*/

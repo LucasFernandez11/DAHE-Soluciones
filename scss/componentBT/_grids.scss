@@ -1,9 +1,0 @@
-@import '../base/variables';
-@import '../base/mapas';
-
-/* Grid */  
-  .colorText {
-    color: map-get($general , color-principal) ;
-  }
-  
-  /*fin de cards y grid*/

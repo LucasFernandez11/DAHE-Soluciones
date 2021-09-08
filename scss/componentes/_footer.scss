@@ -7,7 +7,7 @@ footer {
     width: map-get($general, footer-img-ancho);
   }
 }
-
+/*fin de logos dentro de footer*/
 /*stilos de buttons- footer*/
 .button-foot {
   border: 1px solid transparent
@@ -20,7 +20,5 @@ footer {
 
 .button-foot:active {
   background: #3B5998;
-
 }
-
 /*fin estilo button footer*/

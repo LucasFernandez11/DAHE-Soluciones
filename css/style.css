@@ -16,7 +16,7 @@
   background: linear-gradient(180deg, #4ca1af 11%, rgba(2, 0, 36, 0.8995973389) 79%);
 }
 
-/*propiedades para separacion de seccion */
+/*propiedades para separacion de secciones */
 .separador-background {
   background: url("https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
@@ -33,6 +33,7 @@
   background: url("http://www.publibureau.com/comfica/wp-content/uploads/2018/04/Fondo_Transparente_Web-01.png");
 }
 
+/*fin de separaciones*/
 /*propiedad para img dentro de  navbar*/
 header img {
   width: 13vh;
@@ -44,11 +45,12 @@ header img {
 .presentacionParrafoColor {
   color: antiquewhite;
   text-align: center;
-  font-family: "roboto";
+  font-family: "roboto", cursive;
   font-size: 20px;
 }
 
-/*modelado de mi titulo*/
+/*fin estilo presentacion de paginas*/
+/*estilo de mi titulo index*/
 .titulo-principal {
   padding: 15px;
   margin: 15px;
@@ -72,7 +74,7 @@ header img {
   padding: auto;
 }
 
-/*animation en mi titulo*/
+/*animation en mi titulo index*/
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -123,57 +125,14 @@ header img {
     opacity: 1;
   }
 }
-/* Grid */
-.colorText {
-  color: antiquewhite;
-}
-
-/*fin de cards y grid*/
-/* transform y transition*/
-.text1,
-.text2,
-.text3 {
-  word-spacing: 2px;
-  border-radius: 15px;
-  transition: all 1s;
-}
-
-.text1:hover {
-  box-shadow: 0 1px 10px;
-  background-color: var(--background-texto);
-}
-
-.text2:hover {
-  box-shadow: 0 1px 10px;
-  background-color: var(--background-texto);
-}
-
-.text3:hover {
-  box-shadow: 0 1px 10px;
-  background-color: var(--background-texto);
-}
-
-.text3Bis {
-  transition: all 2s;
-}
-
-.text3Bis:hover {
-  box-shadow: 0 1px 10px;
-  background-color: var(--background-texto);
-  /*prefijos con mixin*/
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-}
-
-/*fin transform y transition*/
+/*fin de titulo index*/
 /*propiedad para logos de redes dentro de footer*/
 footer img {
   height: 5vh;
   width: 5vh;
 }
 
+/*fin de logos dentro de footer*/
 /*stilos de buttons- footer*/
 .button-foot {
   border: 1px solid transparent;
@@ -189,11 +148,11 @@ footer img {
 }
 
 /*fin estilo button footer*/
+/* carousel de infraestructura*/
 .carousel {
   margin-bottom: 4rem;
 }
 
-/* carousel de infraestructura*/
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
@@ -211,31 +170,35 @@ footer img {
   height: 32rem;
 }
 
-/*background de texto dentro de mi carousel*/
+/*fin de carousel*/
+/*background de texto dentro de carousel infraestructura*/
 .fuente-carousel {
   background-color: rgba(44, 45, 49, 0.596);
   border-radius: 18px;
 }
 
-.card-img-size {
-  height: 20%;
-  width: 100%;
+/*fin de bg de texto en carousel infraestructura*/
+/* textos en cards pagina la empresa */
+.colorText {
+  color: antiquewhite;
 }
 
-/*boton ofcanvas en pag infraestructura*/
+/*fin textos en cards pagina la empresa*/
+/*boton offcanvas dentro de carousel en pag infraestructura*/
 .list-style {
   list-style: none;
   font-family: "roboto", cursive;
   font-size: 18px;
 }
 
-/*fin boton infraestructura*/
+/*fin boton offcanvas infraestructura*/
 /*texto de cards pag infraestructura*/
 .card-text {
   font-family: "roboto", cursive;
   color: antiquewhite;
 }
 
+/*fin de card infraestructura*/
 /*button whatsapp solo en pagina de contacto para pantallas mobile*/
 .btn-whatsapp {
   display: none;
@@ -267,6 +230,7 @@ footer img {
   }
 }
 /*fin de button whatsapp*/
+/*formulario de pag contacto*/
 .formulario {
   width: 450px;
   margin: auto;
@@ -277,7 +241,7 @@ footer img {
 }
 
 .titulo-formulario {
-  font-family: "roboto";
+  font-family: "roboto", cursive;
   text-align: center;
   color: antiquewhite;
   margin: 0;
@@ -289,7 +253,7 @@ footer img {
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
-  font-family: "roboto";
+  font-family: "roboto", cursive;
   color: black;
   font-size: 20px;
   border: none;
@@ -306,7 +270,7 @@ textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
-  font-family: "roboto";
+  font-family: "roboto", cursive;
   font-size: 20px;
   color: antiquewhite;
 }
@@ -320,6 +284,8 @@ textarea {
     width: 100%;
   }
 }
+/*fin de formulario de pagina contacto*/
+/*estilos para titulos de paginas*/
 .titulo-principal-p {
   padding: 15px;
   margin: 15px;
@@ -341,6 +307,7 @@ textarea {
   padding: auto;
 }
 
+/*fin de titulos de paginas*/
 .separador-background, .separador-background-clientes1, .separador-background-clientes2, .separador-background-clientes3 {
   background-repeat: no-repeat;
   background-position: 50% 50%;

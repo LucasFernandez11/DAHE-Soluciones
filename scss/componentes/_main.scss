@@ -1,102 +1,147 @@
 @import '../base/mapas';
 @import '../base/variables';
 
-/*background de texto dentro de mi carousel*/
-.fuente-carousel {
-    background-color: $background-texto;
-    border-radius: 18px;
-}
-.card-img-size {
-    height: 20%;
-    width: 100%;
+/* carousel de infraestructura*/
+.carousel {
+  margin-bottom: 4rem;
 }
 
-/*boton ofcanvas en pag infraestructura*/
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/*fin de carousel*/
+
+/*background de texto dentro de carousel infraestructura*/
+.fuente-carousel {
+  background-color: $background-texto;
+  border-radius: 18px;
+}
+
+/*fin de bg de texto en carousel infraestructura*/
+
+/* textos en cards pagina la empresa */
+.colorText {
+  color: map-get($general, color-principal);
+}
+
+/*fin textos en cards pagina la empresa*/
+
+/*boton offcanvas dentro de carousel en pag infraestructura*/
 .list-style {
-    list-style: none;
-    font-family: $font-family;
-    font-size: $font-size;
-  }
-  /*fin boton infraestructura*/
-  /*texto de cards pag infraestructura*/
-  .card-text {
-    font-family: $font-family;
-    color: $color-texto ;
-  }
-  /*button whatsapp solo en pagina de contacto para pantallas mobile*/  
+  list-style: none;
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+/*fin boton offcanvas infraestructura*/
+
+/*texto de cards pag infraestructura*/
+.card-text {
+  font-family: map-get($general, fuente-principal);
+  color: map-get($general, color-principal);
+}
+
+/*fin de card infraestructura*/
+/*button whatsapp solo en pagina de contacto para pantallas mobile*/
+.btn-whatsapp {
+  display: none;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 576px) {
   .btn-whatsapp {
-    display: none;
-    width: 70px;
-    height: 70px;
-    color:#fff;
+    display: flex;
+    width: 10%;
+    height: 10%;
+    color: #fff;
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 15%;
+    bottom: 8%;
     border-radius: 50%;
-    line-height: 80px;  
+    line-height: 80px;
     z-index: 999;
+    size: 20px;
+    align-items: center;
   }
-  @media only screen and (max-width: 576px) {
-    .btn-whatsapp {
-      display:flex;
-      width: 10%;
-      height: 10%;
-      color:#fff;
-      position:fixed;
-      right: 15%;
-      bottom: 8%;
-      border-radius: 50%;
-      line-height: 80px;    
-      z-index: 999;
-      size: 20px;
-      align-items:center;
-    }
-  }
-  /*fin de button whatsapp*/
+}
+
+/*fin de button whatsapp*/
+
+/*formulario de pag contacto*/
+.formulario {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.titulo-formulario {
+  font-family: map-get($general, fuente-principal);
+  text-align: map-get($general, alineacion-texto);
+  color: map-get($general, color-principal);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.casillas-formulario {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-family: map-get($general, fuente-principal);
+  color: black;
+  font-size: map-get($general, tamaño-fuente);
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 250px;
+  max-width: 100%;
+}
+
+.boton-form-contacto {
+  background: #31384a;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-family: map-get($general, fuente-principal);
+  font-size: map-get($general, tamaño-fuente);
+  color: map-get($general, color-principal);
+}
+
+.boton-form-contacto:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
   .formulario {
-    width: 450px;
-    margin: auto;
-    background: rgba(0,0,0,0.5);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-  }
-  .titulo-formulario {
-    font-family: map-get($general, fuente-principal);
-    text-align: map-get($general , alineacion-texto);
-    color: map-get($general, color-principal );
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  .casillas-formulario {
     width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-family: map-get($general, fuente-principal);
-    color: black;
-    font-size: map-get($general , tamaño-fuente );
-    border: none;
   }
-  textarea {
-    min-height: 100px;
-    max-height: 250px;
-    max-width: 100%;
-  }
-  .boton-form-contacto {
-    background: #31384a;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    font-family: map-get($general, fuente-principal);
-    font-size: map-get($general , tamaño-fuente );
-    color: map-get($general, color-principal );    
-  }
-  .boton-form-contacto:hover {
-    cursor:pointer;
-  }
-  @media only screen and (max-width: 576px) {
-    .formulario {
-      width: 100% ;
-    }    
-  }
+}
+
+/*fin de formulario de pagina contacto*/

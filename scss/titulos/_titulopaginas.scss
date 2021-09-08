@@ -2,6 +2,7 @@
  @import '../base/mapas';
  @import '../base/mixin';
 
+ /*estilos para titulos de paginas*/
  .titulo-principal-p {
      padding: 15px;
      margin: 15px;
@@ -13,7 +14,6 @@
      color: #FF074A;
      display: flex;
      justify-content: center;
-
  }
 
  .titulo-p {
@@ -22,5 +22,6 @@
      display: block;
      margin: 15px;
      padding: auto;
-
  }
+
+ /*fin de titulos de paginas*/
