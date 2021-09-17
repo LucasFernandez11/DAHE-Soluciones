@@ -12,19 +12,19 @@
 
 /*propiedades para separacion de secciones */
 .separador-background {  
-  @include separador ("https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" , 400px)
+  @include separador ("https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" , 400px, cover);
 }
 
 
 .separador-background-clientes1 { 
- @include separador ("https://gerencia-ambiental.com/wp-content/uploads/2020/06/Movistar-Telefonica-1440x564_c.jpg" , 400px)
+ @include separador ("https://gerencia-ambiental.com/wp-content/uploads/2020/06/Movistar-Telefonica-1440x564_c.jpg" , 400px, cover);
 }
 
 .separador-background-clientes2 {  
-  @include separador ("http://telecentro.com.ar/img/meta-image.jpg" , 400px)
+  @include separador ("http://telecentro.com.ar/img/meta-image.jpg" , 400px, cover);
 }
 
 .separador-background-clientes3 {  
-  @include separador ("http://www.publibureau.com/comfica/wp-content/uploads/2018/04/Fondo_Transparente_Web-01.png" , 400px);
+  @include separador ("http://www.publibureau.com/comfica/wp-content/uploads/2018/04/Fondo_Transparente_Web-01.png" , 400px, cover);
 }
 /*fin de separaciones*/

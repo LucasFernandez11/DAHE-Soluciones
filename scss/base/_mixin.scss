@@ -19,11 +19,11 @@
         -moz-transform: $rotatex;
     }
 
-    @mixin separador($imagen, $height) {
+    @mixin separador($imagen, $height, $bgsize ) {
         background-image: url($imagen);
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-size: cover;
+        background-size: $bgsize;
         background-attachment: fixed;
         position: relative;
         height: $height;

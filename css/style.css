@@ -236,22 +236,6 @@ footer img {
   z-index: 999;
 }
 
-@media only screen and (max-width: 576px) {
-  .btn-whatsapp {
-    display: flex;
-    width: 8%;
-    height: 8%;
-    color: #fff;
-    position: fixed;
-    right: 12%;
-    bottom: 3%;
-    border-radius: 50%;
-    line-height: 30px;
-    z-index: 999;
-    size: 15px;
-    align-items: center;
-  }
-}
 /*fin de button whatsapp*/
 /*formulario de pag contacto*/
 .formulario {
@@ -302,11 +286,6 @@ textarea {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 576px) {
-  .formulario {
-    width: 100%;
-  }
-}
 /*fin de formulario de pagina contacto*/
 /*estilos para titulos de paginas*/
 .titulo-principal-p {
@@ -331,5 +310,67 @@ textarea {
 }
 
 /*fin de titulos de paginas*/
+@media only screen and (max-width: 576px) {
+  .btn-whatsapp {
+    display: flex;
+    width: 8%;
+    height: 8%;
+    color: #fff;
+    position: fixed;
+    right: 12%;
+    bottom: 3%;
+    border-radius: 50%;
+    line-height: 30px;
+    z-index: 999;
+    size: 15px;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .formulario {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .separador-background {
+    background-image: url("https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+    height: 400px;
+  }
+
+  .separador-background-clientes1 {
+    background-image: url("https://gerencia-ambiental.com/wp-content/uploads/2020/06/Movistar-Telefonica-1440x564_c.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+    height: 400px;
+  }
+
+  .separador-background-clientes2 {
+    background-image: url("http://telecentro.com.ar/img/meta-image.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+    height: 400px;
+  }
+
+  .separador-background-clientes3 {
+    background-image: url("http://www.publibureau.com/comfica/wp-content/uploads/2018/04/Fondo_Transparente_Web-01.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+    height: 400px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
