@@ -98,19 +98,34 @@
       </a>
     </div>
     <!-- fin de button whatsapp -->
-    <div class=" container d-flex justify-content-start ">
+    <div class=" container d-flex justify-content-center ">
       <h3>Envie su consulta o visite nuestras redes <a class="link-danger" href="#socialnetworks">#</a></h3>
     </div>
     <!-- formulario de contacto -->
     <section class="container py-3 mb-4 ">
-      <form class="formulario" action="">
-        <h3 class="titulo-formulario">Contacto</h3>
-        <input class="casillas-formulario" type="text" name="nombre" placeholder="Nombre">
-        <input class="casillas-formulario" type="text" name="apellido" placeholder="Apellido">
-        <input class="casillas-formulario" type="text" name="telefono" placeholder="Telefono">
-        <input class="casillas-formulario" type="text" name="direccion de correo" placeholder="Direccion de Correo">
-        <textarea class="casillas-formulario" name="mensaje" placeholder="Escriba aqui su mensaje "></textarea>
-        <input class="boton-form-contacto" type="submit" value="ENVIAR">
+      <form class="formulario" id="formu">
+        <div>
+          <h3 class="titulo-formulario">Dejenos su mensaje</h3>
+        </div>
+        <div>
+          <label for="nombre">Nombre y apellido</label>
+          <input class="casillas-formulario" type="text" name="nombre" id="nombre" placeholder="Nombre">  
+        </div>
+        <div>
+          <label for="numero">Número</label>      
+          <input class="casillas-formulario" type="number" name="telefono" id="telefono" placeholder="Telefono">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input class="casillas-formulario" type="email" name="email" id="email" placeholder="Direccion de Correo">
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea class="casillas-formulario" name="mensaje"id="mensaje"  placeholder="Escriba aqui su mensaje "></textarea>
+        </div>
+        <div>          
+          <input class="boton-form-contacto" type="submit" value="ENVIAR">
+        </div>
       </form>
     </section>
     <!-- fin de formulario de contacto -->
@@ -197,11 +212,13 @@
     </div>
   </footer>
 
+
+  <!-- JavaScript -->
+  <script src="sender/smtp.js"></script>
+  <script src="sender/sender.js"></script>
   <!--AOS-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
   <!--BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
