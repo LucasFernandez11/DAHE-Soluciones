@@ -41,7 +41,7 @@
 
 <body class="body">
   <header>
-    <!-- navbar de bootstrap con estilos de css -->
+    <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-5 mx-auto">
       <div class="container">
         <a class="navbar-brand img-nav" href="index.html"><img src="images/Logo-dahe.png"
@@ -98,10 +98,11 @@
       </a>
     </div>
     <!-- fin de button whatsapp -->
-    <div class=" container d-flex justify-content-center ">
+
+    <section class=" container d-flex justify-content-center ">
       <h3>Envie su consulta o visite nuestras redes <a class="link-danger" href="#socialnetworks">#</a></h3>
-    </div>
-    <!-- formulario de contacto -->
+    </section>
+    <!-- formulario de contacto funcional con JS -->
     <section class="container py-3 mb-4 ">
       <form class="formulario" id="formu">
         <div>
@@ -109,21 +110,24 @@
         </div>
         <div>
           <label for="nombre">Nombre y apellido</label>
-          <input class="casillas-formulario" type="text" name="nombre" id="nombre" placeholder="Nombre" required>  
+          <input class="casillas-formulario" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
         </div>
         <div>
-          <label for="numero">Número</label>      
-          <input class="casillas-formulario" type="number" name="telefono" id="telefono" placeholder="Telefono"required>
+          <label for="numero">Número</label>
+          <input class="casillas-formulario" type="number" name="telefono" id="telefono" placeholder="Telefono"
+            required>
         </div>
         <div>
           <label for="email">Email</label>
-          <input class="casillas-formulario" type="email" name="email" id="email" placeholder="Direccion de Correo"required>
+          <input class="casillas-formulario" type="email" name="email" id="email" placeholder="Direccion de Correo"
+            required>
         </div>
         <div>
           <label for="mensaje">Mensaje</label>
-          <textarea class="casillas-formulario" name="mensaje"id="mensaje"  placeholder="Escriba aqui su mensaje"required></textarea>
+          <textarea class="casillas-formulario" name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje"
+            required></textarea>
         </div>
-        <div>          
+        <div>
           <input class="boton-form-contacto" type="submit" value="ENVIAR">
         </div>
       </form>
@@ -136,7 +140,6 @@
         <h3 class="text-white">Visita nuestras redes sociales y enterate de los avances, obras y propuestas
           actualizadas.
         </h3>
-
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
@@ -145,7 +148,7 @@
                   nuestros trabajos mas de cerca.</h2>
                 <div class="d-flex  mt-auto">
                   <div class="me-auto">
-                    <a href="https://facebook.com"> <img src="images/facebook(2).png"
+                    <a target="_blank"  href= "https://www.facebook.com/Dahe-Soluciones-285960058098516/"> <img src="images/facebook(2).png"
                         alt="logo de facebook con link hacia pagina de facebook" width="32" height="32"
                         class="rounded-circle border border-white"></a>
                   </div>
@@ -160,7 +163,7 @@
                   el avanze de las obras y las zonas.</h2>
                 <div class="d-flex mt-auto">
                   <div class="me-auto">
-                    <a href="https://instagram.com"> <img src="images/instagram.png"
+                    <a target="_blank" href="https://instagram.com"> <img src="images/instagram.png"
                         alt="logo de instagram con link hacia pagina de instagram " width="32" height="32"
                         class="rounded-circle border border-black"></a>
                   </div>
@@ -168,7 +171,6 @@
               </div>
             </div>
           </div>
-
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
               <div class="d-flex flex-column h-100 p-5 pb-3 ">
@@ -176,7 +178,7 @@
                   quieras, y conoce desde adentro nuestra empresa.</h2>
                 <div class="d-flex mt-auto">
                   <div class="me-auto">
-                    <a href="https://linkedin.com"> <img src="images/linkedin.png"
+                    <a target="_blank" href="https://www.linkedin.com/company/dahe-soluciones-sa/mycompany/"> <img src="images/linkedin.png"
                         alt="logo de linkedin con link hacia pagina de linkedin" width="32" height="32"
                         class="rounded-circle border border-black">
                     </a>
@@ -189,27 +191,23 @@
       </div>
     </section>
     <!-- fin de redes sociales -->
-
-
   </main>
 
 
   <footer class="container">
-    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
         <span class="text-muted">&copy; 2021 DAHE Soluciones-Derechos Reservados</span>
       </div>
-
       <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-        <li class="ms-3 button-foot"><a href="https://facebook.com"><img src="images/facebook(2).png"
+        <li class="ms-3 button-foot"><a href="https://www.facebook.com/Dahe-Soluciones-285960058098516/"><img src="images/facebook(2).png"
               alt="logo de facebook"></a></li>
         <li class="ms-3 button-foot "><a href="https://instagram.com"><img src="images/instagram.png"
               alt="logo de instagram"></a></li>
-        <li class="ms-3 button-foot"><a href="https://linkedin.com"><img src="images/linkedin.png"
+        <li class="ms-3 button-foot"><a href="https://www.linkedin.com/company/dahe-soluciones-sa/mycompany/"><img src="images/linkedin.png"
               alt="logo de linkedin"></a></li>
       </ul>
-
-    </div>
+    </section>
   </footer>
 
 
@@ -220,7 +218,9 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!--AOS-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+  </script>
   <!--BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
