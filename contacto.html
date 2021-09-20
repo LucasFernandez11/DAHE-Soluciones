@@ -109,19 +109,19 @@
         </div>
         <div>
           <label for="nombre">Nombre y apellido</label>
-          <input class="casillas-formulario" type="text" name="nombre" id="nombre" placeholder="Nombre">  
+          <input class="casillas-formulario" type="text" name="nombre" id="nombre" placeholder="Nombre" required>  
         </div>
         <div>
           <label for="numero">Número</label>      
-          <input class="casillas-formulario" type="number" name="telefono" id="telefono" placeholder="Telefono">
+          <input class="casillas-formulario" type="number" name="telefono" id="telefono" placeholder="Telefono"required>
         </div>
         <div>
           <label for="email">Email</label>
-          <input class="casillas-formulario" type="email" name="email" id="email" placeholder="Direccion de Correo">
+          <input class="casillas-formulario" type="email" name="email" id="email" placeholder="Direccion de Correo"required>
         </div>
         <div>
           <label for="mensaje">Mensaje</label>
-          <textarea class="casillas-formulario" name="mensaje"id="mensaje"  placeholder="Escriba aqui su mensaje "></textarea>
+          <textarea class="casillas-formulario" name="mensaje"id="mensaje"  placeholder="Escriba aqui su mensaje"required></textarea>
         </div>
         <div>          
           <input class="boton-form-contacto" type="submit" value="ENVIAR">
@@ -216,6 +216,8 @@
   <!-- JavaScript -->
   <script src="sender/smtp.js"></script>
   <script src="sender/sender.js"></script>
+  <!-- sweetAlert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!--AOS-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>AOS.init();</script>
